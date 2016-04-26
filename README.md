@@ -32,3 +32,7 @@
 ```js	
   var connection = new WebSocket('wss://<YOUR_WEBSOCKET_SERVER_DOMAIN/IP>:<YOUR_WEBSOCKET_SERVER_PORT>');
 ```
+
+#### Step3. Run testClient.html
+
+
