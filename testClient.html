@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style>
+		html, body {
+			font-family: monospace;
+		}
+		input {
+			border: 1px solid #D2D2D2;
+			padding: 8px;
+		}
+		button {
+			background: white;
+			border: 1px solid #D2D2D2;
+			cursor: pointer;	
+			padding: 8px;
+		}
+		label {
+			display: inline-block;
+			font-weight: bold;
+			width: 150px;
+		}
+		.container {
+			margin: 0px auto;
+			width: 800px;	
+		}
+		.noti-content-div {
+			background:#F1F1F1;
+			border: 1px solid #D2D2D2;
+			border-radius:4px;
+			width: 100%;
+			height:300px;
+			margin: 10px 0;
+			overflow-y: auto;
+			padding: 10px;
+		}
+		.noti-content {
+			background:white;
+			padding: 5px; 
+			margin: 10px;  
+			min-width: 100px; 
+		}
+		.noti-username {
+			color:green;
+		}
+		.noti-message {
+			color:orange;
+			font-size:14px;
+			font-weight: bold;
+			padding: 5px 0px;
+			word-break: break-word;
+		}
+		.noti-time {
+			font-size:12px;
+		}
+		.noti-input-block {
+			text-align: center;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js" 
+		integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="  
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="wssClient.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="noti-status" style="font-size:30px;"></div>
+		<div id="noti-content" class="noti-content-div"></div>
+		<div class="noti-input-block">
+			<label for="noti-username" class="lb">Your name: </label><input type="text" id="noti-username" placeholder="Name" value="User" /><br>
+			<label for="noti-msg" class="lb">Message: </label><input type="text" id="noti-msg" placeholder="Message" value="Message" /><br>
+			<label for="noti-receiver" class="lb">Receiver name: </label><input type="text" id="noti-receiver" placeholder="Receiver" value="User" /><br>
+			<br>
+			<button id="btn-conn-noti" class="btn">Register/Send</button>
+		</div>
+	</div>
+</body>
+</html>
